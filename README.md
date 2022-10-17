@@ -4,7 +4,7 @@
   - https://jiyep.github.io/2022Web-mportpolio/
   
  - netlify site
-  - https://ubiquitous-queijadas-cea397.netlify.app/
+    - https://ubiquitous-queijadas-cea397.netlify.app/
   
   - 사용한 framework
     - index.html => w3school 사용
