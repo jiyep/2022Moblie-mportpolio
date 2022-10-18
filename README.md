@@ -7,9 +7,9 @@
     - https://ubiquitous-queijadas-cea397.netlify.app/
   
   - 사용한 framework
-    - index.html => 사용
+    - index.html => bootstrap 사용
     - minfo.html => Milligram 사용
-    - mcareer.html => uikit 사용
-    - mstudy.html => bootstrap 사용 사용
+    - mcareer.html => Uikit 사용
+    - mstudy.html => Bulma 사용 사용
 
 
