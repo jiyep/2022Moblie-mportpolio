@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">	
+<title>HTML5 개인 포트폴리오 홈페이지</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="echarts.min.js"></script>
+<link rel="stylesheet" type="text/css" href="mportpolio.css"/>
+</head>
+<body>
+	<header>
+		<h1>박지예 홈페이지</h1>
+	</header>
+	<nav>
+		<span><a href="index.html"> 소개 </a></span>
+		<span><a href="minfo.html"> 인적 </a></span>
+		<span><a href="mstudy.html"> 팀 프로젝트 </a></span>
+		<span><a href="mcareer.html"> 개인 프로젝트 </a></span>
+        <span><a href="echart.html"> echart </a></span>
+	</nav>
+  	<div class="content">
+	<section class="section1">  
+		<!-- 높이와 너비가 지정된 Dom 을 생성 -->
+<div id="main" style="width: 600px;height:400px;"></div>
+<script type="text/javascript">
+    // DOM을 준비하고 echart 객체
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 차트 속성과 데이터를 지정
+    var option = {
+        title: {
+            text: 'Stydy Time'
+        },
+        tooltip: {},
+        legend: {
+            data:['Time']
+        },
+        xAxis: {
+            data: ["Mon","Tue","Wed","Thu","Fri","Sst","Sun"]
+        },
+        yAxis: {},
+        series: [{
+            name: 'Time',
+            type: 'bar',
+            itemStyle:{
+                color: '#91c7ae',
+            },
+            data: [7,6,9,10,4,8,3]
+        }]
+    
+    };
+
+    // 위에서 설정한 속성을 차트에 반영
+    myChart.setOption(option);
+</script>
+	</section>
+
+	<aside>
+		<h3>참조링크</h3>
+		<a href="http://www.naver.com">
+			<img class="portal" src="naver.jpg" alt="네이버이동"/>
+		</a>
+		<a href="http://www.google.com">
+			<img class="portal" src="google.jpg" alt="구글이동"/>
+		</a>
+		<a href="http://www.daum.net">
+			<img class="portal" src="daum.jpg" alt="다음이동"/>
+		</a>
+	</aside>
+  </div>
+	<footer>
+		<h2>Copyleft &copy; 2022 Park Ji Ye </h2>
+	</footer>
+</body>
+</html>
